@@ -1,6 +1,6 @@
-package java.faculty.entites;
+package java.faculty;
 
-import java.faculty.FacultyBean;
+import java.faculty.entites.Faculty;
 import java.utils.Descriptor;
 
 import javax.ws.rs.Consumes;

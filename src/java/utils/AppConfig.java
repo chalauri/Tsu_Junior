@@ -1,6 +1,6 @@
 package java.utils;
 
-import java.faculty.entites.FacultyResource;
+import java.faculty.FacultyResource;
 import java.util.Collections;
 import java.util.Set;
 
