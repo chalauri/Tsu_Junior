@@ -1,8 +1,11 @@
-package java.faculty;
+package faculty;
 
-import java.faculty.entites.Faculty;
+import faculty.entites.Faculty;
+
 import java.io.Serializable;
-import java.utils.Descriptor;
+import java.util.List;
+
+import utils.Descriptor;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
@@ -23,5 +26,11 @@ public class FacultyBean implements Serializable {
 		tx.commit();
 
 		return Descriptor.validDescriptor("ფაკულტეტი წარმატებით დაემატა");
+	}
+
+	public List<Faculty> getFaculties() {
+
+		return em.createQuery("from tsu.junior.Faculty e", Faculty.class)
+				.getResultList();
 	}
 }

@@ -1,2 +1,5 @@
 eclipse.preferences.version=1
-encoding//src/java/faculty/FacultyBean.java=UTF-8
+encoding//src/main/java/faculty/FacultyBean.java=UTF-8
+encoding//src/main/java/project/ProjectBean.java=UTF-8
+encoding//src/main/java/student/StudentBean.java=UTF-8
+encoding//src/main/java/student/StudentResource.java=UTF-8

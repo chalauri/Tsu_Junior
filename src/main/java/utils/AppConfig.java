@@ -1,6 +1,5 @@
-package java.utils;
+package utils;
 
-import java.faculty.FacultyResource;
 import java.util.Collections;
 import java.util.Set;
 
@@ -16,7 +15,7 @@ public class AppConfig extends Application {
 	private static final Set<Class<?>> emptyClassSet = Collections.emptySet();
 
 	public Set<Class<?>> getClasses() {
-		emptyClassSet.add(FacultyResource.class);
+	//	emptyClassSet.add(FacultyResource.class);
 		return emptyClassSet;
 	}
 

@@ -1,7 +1,9 @@
-package java.student.entities;
+package student.entities;
 
 import java.io.Serializable;
-import java.project.Project;
+
+import project.entities.Project;
+
 import java.util.Date;
 
 import javax.persistence.Column;

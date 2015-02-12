@@ -1,7 +1,6 @@
-package java.faculty;
+package faculty;
 
-import java.faculty.entites.Faculty;
-import java.utils.Descriptor;
+import java.util.List;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -9,9 +8,12 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
+import utils.Descriptor;
+import faculty.entites.Faculty;
+
 @Path("/faculty")
 public class FacultyResource {
-	
+
 	FacultyBean bean = new FacultyBean();
 
 	@Path("/saveFaculty")
@@ -22,12 +24,13 @@ public class FacultyResource {
 
 		return bean.saveFaculty(faculty);
 	}
-	
-	@Path("/test")
+
+	@Path("getFaculties")
 	@GET
-	@Produces("text/plain")
-	public String get(){
+	@Produces("application/json; charset=UTF-8")
+	public List<Faculty> getFaculties(){
 		
-		return "GIGA";
+		return bean.getFaculties();
 	}
+	
 }

@@ -1,6 +1,6 @@
-package java.student.entities;
+package student.entities;
 
-import java.faculty.entites.Faculty;
+import faculty.entites.Faculty;
 import java.io.Serializable;
 
 import javax.persistence.Column;
@@ -39,7 +39,7 @@ public class Student implements Serializable {
 
 	@ManyToOne
 	@JoinColumn(name = "FACULTY_ID")
-	private Faculty afculty;
+	private Faculty faculty;
 
 	public Integer getId() {
 		return id;
@@ -81,12 +81,12 @@ public class Student implements Serializable {
 		this.email = email;
 	}
 
-	public Faculty getAfculty() {
-		return afculty;
+	public Faculty getFaculty() {
+		return faculty;
 	}
 
-	public void setAfculty(Faculty afculty) {
-		this.afculty = afculty;
+	public void setFaculty(Faculty faculty) {
+		this.faculty = faculty;
 	}
 
 }

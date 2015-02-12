@@ -1,4 +1,4 @@
-package java.faculty.entites;
+package project.entities;
 
 import java.io.Serializable;
 
@@ -10,15 +10,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.TableGenerator;
 
-@Entity(name = "tsu.junior.Faculty")
-@Table(name = "FACULTIES")
-public class Faculty implements Serializable {
+@Entity(name = "tsu.junior.project")
+@Table(name = "PROJECTS")
+public class Project implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@TableGenerator(name = "java.faculty.Faculty", table = "ID_GENERATORS", pkColumnName = "PRIMARY_KEYS", pkColumnValue = "FACULTY_ID", valueColumnName = "KEY_VALUES", allocationSize = 1)
-	@GeneratedValue(strategy = GenerationType.TABLE, generator = "java.faculty.Faculty")
+	@TableGenerator(name = "java.project.Project", table = "ID_GENERATORS", pkColumnName = "PRIMARY_KEYS", pkColumnValue = "PROJECT_ID", valueColumnName = "KEY_VALUES", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.TABLE, generator = "java.project.Project")
 	@Column(name = "ID")
 	private Integer id;
 
